@@ -1,0 +1,7 @@
+.rate {
+  width: fit-content;
+}
+
+.rate img {
+  height: clamp(1.8rem, 5vw, 3.6rem);
+}

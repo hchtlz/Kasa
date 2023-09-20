@@ -1,0 +1,60 @@
+/* Carrousel.css */
+.carrousel {
+  border-radius: 2.5rem;
+  height: clamp(25.5rem, 40vw, 41.5rem);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carrousel-wrapper {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrousel-item {
+  flex: 0 0 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.carrousel-item.active {
+  flex: 0 0 100%;
+}
+
+.carrousel img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.prev,
+.next {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  height: clamp(3rem, 7vw, 12rem);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 0.5rem;
+}
+
+.next {
+  right: 0.5rem;
+}
+
+.carrousel-info {
+  bottom: 0;
+  color: white;
+  font-size: 1.8rem;
+  left: 50%;
+  margin-bottom: 2.5rem;
+  position: absolute;
+  transform: translateX(-50%);
+}
