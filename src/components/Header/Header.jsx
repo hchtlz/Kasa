@@ -1,6 +1,7 @@
 /* eslint-disable */
 import './Header.css'
 import { useEffect, useState } from 'react';
+import logo from '../../assets/images/logo-header.svg'
 
 const Header = () => {
   const [currentPath, setCurrentPath] = useState(window.location.pathname); // Obtenez le chemin de la page actuelle
@@ -21,7 +22,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <img src="../../src/assets/images/logo-header.svg" alt="logo" className="header__logo" />
+      <img src={logo} alt="logo Kasa" className="header__logo" />
       <nav>
         <ul className="header__menu">
           <li className={`header__menu-item ${currentPath === '/' ? 'active' : ''}`}>
