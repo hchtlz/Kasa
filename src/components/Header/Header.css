@@ -1,8 +1,9 @@
 .header {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-top: 4.5rem;
+  max-width: 126rem;
 } 
 
 .header__logo {
@@ -11,13 +12,13 @@
 }
 
 .header__menu {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .header__menu-item {
-  list-style: none;
   font-size: clamp(1.6rem, 2vw, 2.4rem);
+  list-style: none;
 }
 
 .header__menu-item:first-child {
