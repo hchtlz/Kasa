@@ -1,13 +1,10 @@
-:root {
-  font-family: Montserrat, sans-serif;
-}
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
 
 body {
+  font-family: Montserrat, sans-serif;
   max-width: 126rem;
   margin: 0 auto;
 }
