@@ -1,0 +1,55 @@
+.collapse {
+  background-color: #FF6060;
+  border-radius: 1rem;
+  color: #fff;
+  height: fit-content;
+  overflow: hidden;
+  width: 100%;
+}
+
+.collapse__title {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.collapse__title h3 {
+  font-weight: 500;
+  margin: 0;
+}
+
+.collapse__content {
+  background-color: #F6F6F6;
+  color: #FF6060;
+  font-size: clamp(1.6rem, 2vw, 2.4rem);
+  font-style: normal;
+  font-weight: 400;
+  padding: 2rem;
+  line-height: 142.6%;
+  max-height: 100%;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.collapse_open.collapse__content {
+  display: block;
+  max-height: 50rem;
+  opacity: 1;
+}
+
+.collapse.collapse__content {
+  opacity: 0;
+  max-height: 0;
+}
+
+.collapse__title-chevron {
+  transition: transform 0.3s ease-in-out;
+}
+
+.collapse_open .collapse__title-chevron {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}

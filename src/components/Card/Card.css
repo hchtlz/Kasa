@@ -45,3 +45,10 @@
   margin: 0;
   font-size: 1.8rem;
 }
+
+@media (max-width: 576px) {
+  .card-link,
+  .card {
+    width: 100%;
+  }
+}
