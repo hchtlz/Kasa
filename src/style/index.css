@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  max-width: 126rem;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+
+.cards_grid {
+  background-color: #F6F6F6;
+  border-radius: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem;
+  justify-items: center;
+  align-items: center;
+  padding: 5.6rem;
+  margin: 0 auto;
+  max-width: 126rem;
+}

@@ -7,9 +7,9 @@ import nextArrow from '../../assets/images/arrow-next.svg';
 
 // TODO: Refactoriser le code pour pouvoir utiliser le composant Carrousel dans les pages des logements
 
-export default function Carrousel() {
+export default function Carrousel({ pictures, name }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const totalImages = logements.length;
+  const totalImages = pictures.length;
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex === totalImages - 1 ? 0 : prevIndex + 1));
@@ -22,9 +22,9 @@ export default function Carrousel() {
   return (
     <div className="carrousel">
       <div className="carrousel-wrapper" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-        {logements.map((logement, index) => (
-          <div className="carrousel-item" key={logement.id}>
-            <img src={logement.cover} alt={logement.title} />
+        {pictures.map((picture, index) => (
+          <div className="carrousel-item" key={index}>
+            <img src={picture} alt={`Image numéro ${index} pour le logement: ${name}`} />
           </div>
         ))}
       </div>

@@ -2,7 +2,8 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-top: 4.5rem;
+  margin: 4.5rem auto 0;
+  padding: 0 10rem;
   max-width: 126rem;
 } 
 
@@ -25,14 +26,14 @@
   margin-right: 5.7rem;
 }
 
-.header__menu-item a {
+.header__menu-item a{
   color: #FF6060;
   font-weight: 300;
   text-decoration: none;
 }
 
-.header__menu-item.active a {
-  text-decoration: underline;
+.active {
+  text-decoration: underline!important;
 }
 
 @media (max-width: 576px) {
@@ -46,6 +47,7 @@
 
   .header__menu {
     padding: 0;
+    width: max-content;
   }
 
   .header__menu-item {

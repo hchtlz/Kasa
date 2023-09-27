@@ -1,6 +1,9 @@
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Logement from "./pages/Logement/Logement";
+import Error from "./pages/Error/Error";
 import Header from "./components/Header/Header";
-import Banner from './components/Banner/Banner'
-import Carrousel from './components/Carrousel/Carrousel'
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -8,8 +11,12 @@ function App() {
 		<div className="App">
 			<Header />
 			<main>
-        <Banner />
-        <Carrousel />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/logement/:id" element={<Logement />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
 			</main>
 			<Footer />
 		</div>
