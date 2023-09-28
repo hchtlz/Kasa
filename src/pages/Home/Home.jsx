@@ -1,3 +1,4 @@
+import React from "react";
 import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Card/Card";
 import logements from "../../datas/logement.json";

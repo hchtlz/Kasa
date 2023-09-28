@@ -1,4 +1,5 @@
 import './Host.css'
+import React from "react";
 
 export default function Host({image, name}) {
   return (

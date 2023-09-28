@@ -1,4 +1,5 @@
 import './Rate.css'
+import React from "react";
 import rateInactive from '../../assets/images/rate-inactive.svg'
 import rateActive from '../../assets/images/rate-active.svg'
 

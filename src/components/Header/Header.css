@@ -4,6 +4,7 @@
   justify-content: space-between;
   margin: 4.5rem auto 0;
   max-width: 126rem;
+  padding: 0 clamp(1rem, 2vw, 10rem);
 } 
 
 .header__logo {

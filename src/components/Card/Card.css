@@ -1,29 +1,28 @@
-/* Card.css */
 .card {
-  width: 34rem;
-  height: 34rem;
   border-radius: 1rem;
-  position: relative;
+  height: 34rem;
   overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
-.card-link {
+.card_link {
+  color: inherit;
   display: block;
-  width: 34rem;
   height: 34rem;
   text-decoration: none;
-  color: inherit;
+  width: 100%;
 }
 
 .card__img {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   border-radius: 1rem;
   filter: brightness(70%);
-  transition: filter 0.3s ease-in-out;
+  height: 100%;
   object-fit: cover;
+  transition: filter 0.3s ease-in-out;
+  width: 100%;
 }
 
 .card:hover .card__img {
@@ -31,23 +30,23 @@
 }
 
 .card__text {
-  position: absolute;
+  border-radius: 1rem 0 0 0;
   bottom: 0;
+  color: #fff;
   left: 0;
-  padding-right: 2rem;
   padding-bottom: 2rem;
   padding-left: 2rem;
-  color: #fff;
-  border-radius: 1rem 0 0 0;
+  padding-right: 2rem;
+  position: absolute;
 }
 
 .card__title {
-  margin: 0;
   font-size: 1.8rem;
+  margin: 0;
 }
 
 @media (max-width: 576px) {
-  .card-link,
+  .card_link,
   .card {
     width: 100%;
   }

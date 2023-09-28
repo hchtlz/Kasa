@@ -1,3 +1,5 @@
+import React from "react";
+
 import Collapse from '../../components/Collapse/Collapse';
 import AboutBanner from '../../components/AboutBanner/AboutBanner';
 import aboutData from '../../datas/about.json';

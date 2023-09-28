@@ -1,11 +1,7 @@
-import React, { useState } from 'react';
 import './Carrousel.css';
-import logements from '../../datas/logement.json';
+import React, { useState } from 'react';
 import previousArrow from '../../assets/images/arrow-previous.svg';
 import nextArrow from '../../assets/images/arrow-next.svg';
-
-
-// TODO: Refactoriser le code pour pouvoir utiliser le composant Carrousel dans les pages des logements
 
 export default function Carrousel({ pictures, name }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,19 +24,23 @@ export default function Carrousel({ pictures, name }) {
           </div>
         ))}
       </div>
-
-      <div className="carrousel-info">
-        <span className="image-count">
-          {currentIndex + 1}/{totalImages}
-        </span>
-      </div>
-
-      <button className="prev" onClick={prevSlide}>
-        <img src={previousArrow} alt="Previous" />
-      </button>
-      <button className="next" onClick={nextSlide}>
-        <img src={nextArrow} alt="Next" />
-      </button>
+  
+      {totalImages > 1 && (
+        <div>
+          <div className="carrousel-info">
+            <span className="image-count">
+              {currentIndex + 1}/{totalImages}
+            </span>
+          </div>
+  
+          <button className="prev" onClick={prevSlide}>
+            <img src={previousArrow} alt="Previous" />
+          </button>
+          <button className="next" onClick={nextSlide}>
+            <img src={nextArrow} alt="Next" />
+          </button>
+        </div>
+      )}
     </div>
   );
 }
