@@ -67,7 +67,7 @@ Le principal objectif de ce projet est d'effectuer la refonte complète du site 
 - L'intégralité des composants développé en React. 
 
 
-## Authors
+## Auteur
 
 [@hchtlz](https://github.com/hchtlz)
 
