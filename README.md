@@ -1,4 +1,4 @@
-# Kasa 🏠
+![Logo](src/assets/images/logo-footer.svg)
 
 https://hchtlz.github.io/Kasa/
 ###
@@ -6,7 +6,6 @@ https://hchtlz.github.io/Kasa/
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />  
 
 
-![Logo](src/assets/images/logo-footer.svg)
 
 Développez une application Web avec React et React Router.
 
