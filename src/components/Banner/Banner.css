@@ -1,6 +1,8 @@
 .banner {
   width: 100%;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   height: clamp(11.1rem, 20vw, 22.3rem);
   border-radius: 2.5rem;
   position: relative;

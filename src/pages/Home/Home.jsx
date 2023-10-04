@@ -9,7 +9,7 @@ export default function Home() {
   
   return (
     <div>
-      <Banner text="Chez vous, partout et ailleurs" image={"src/assets/images/banner.png"} />
+      <Banner text="Chez vous, partout et ailleurs" image={"/src/assets/images/banner.png"} />
       <div className="cards_grid">
         {data.map((logement) => (
           <Card
