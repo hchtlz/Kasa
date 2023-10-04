@@ -7,7 +7,7 @@ import aboutData from '../../datas/about.json';
 export default function About() {
   return (
     <div className="about">
-      <Banner image={"/src/assets/images/banner-about.png"}/>
+      <Banner image={"src/assets/images/banner-about.png"}/>
       <div className="about__content">
         {aboutData.map((aboutItem, index) => (
           <Collapse key={index} title={aboutItem.aboutTitle}>
