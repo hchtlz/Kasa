@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  min-height: 100vh;
 }
 
 body {
@@ -63,6 +62,8 @@ main {
 .logements_tags {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
 }
 
 .logements_rate {

@@ -1,8 +1,9 @@
 .tag__item {
-  padding: 0.3rem 2.1rem;
-  margin-right: 1rem;
-  border-radius: 1rem;
   background: #FF6060;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+  padding: 0.3rem 2.1rem;
   white-space: nowrap;
 }
 
@@ -11,7 +12,7 @@
 }
 
 .tag__item-text {
-  font-size: 1.4rem;
   color: #FFF;
+  font-size: 1.4rem;
   margin: 0;
 }
