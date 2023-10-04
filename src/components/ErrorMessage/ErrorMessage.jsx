@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 
 export default function ErrorMessage() {
   return(
-    <div className="ErrorMessage">
-      <img src={Error404} alt="Error 404"  className="ErrorMessage_logo"/>
-      <h1 className='ErrorMessage_info'>Oups! La page que vous demandez n'existe pas.</h1>
-      <Link to="/" className="ErrorMessage_link">Retourner sur la page d'accueil</Link>
+    <div className="error">
+      <img src={Error404} alt="Error 404" className="error_logo" />
+      <h1 className="error_info">Oups! La page que vous demandez n&apos;existe pas.</h1>
+      <Link to="/" className="error_link">Retourner sur la page d&apos;accueil</Link>
     </div>
   )
 }

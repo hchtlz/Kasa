@@ -1,5 +1,4 @@
-/* Error.css */
-.ErrorMessage {
+.error {
   text-align: center;
   margin: 13rem 0 0 0;
   display: flex;
@@ -8,26 +7,32 @@
   align-items: center;
 }
 
-.ErrorMessage_logo {
+.error_logo {
  width: clamp(20rem, 40vw, 59.7rem);
 }
 
-.ErrorMessage_info {
+.error_info {
   font-size: clamp(1.8rem, 3vw, 3.6rem);
 }
 
-.ErrorMessage_link {
+.error_link {
   font-size: clamp(1.4rem, 2vw, 1.8rem);
   text-decoration: none;
   margin-top: 5rem;
 }
 
-.ErrorMessage_link:hover {
+.error_link:hover {
   text-decoration: underline;
 }
 
-.ErrorMessage_info,
-.ErrorMessage_link {
+.error_info,
+.error_link {
   color: #ff6060;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .error {
+    gap: 6rem;
+  }
 }

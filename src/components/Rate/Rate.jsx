@@ -3,7 +3,7 @@ import React from "react";
 import rateInactive from '../../assets/images/rate-inactive.svg'
 import rateActive from '../../assets/images/rate-active.svg'
 
-const Rate = ({score}) => {
+export default function Rate({ score }) {
   const stars = [1, 2, 3, 4, 5]
 
   return (
@@ -14,5 +14,3 @@ const Rate = ({score}) => {
       })}
     </div>
   )}
-
-export default Rate
