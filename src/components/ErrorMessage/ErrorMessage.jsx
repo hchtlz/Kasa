@@ -3,7 +3,6 @@ import React from "react";
 import Error404 from '../../assets/images/404.svg';
 import { Link } from 'react-router-dom';
 
-
 export default function ErrorMessage() {
   return(
     <div className="ErrorMessage">

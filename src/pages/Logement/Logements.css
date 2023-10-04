@@ -1,0 +1,66 @@
+.logements {
+  margin: 5rem auto;
+}
+
+.logements_info {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logements_info__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logements_title {
+  font-size: clamp(1.8rem, 3vw, 3.6rem);
+}
+
+.logements_location {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+}
+
+.logements_title,
+.logements_location {
+  color: #ff6060;
+  font-weight: 500;
+}
+
+.logements_tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.logements_rate {
+  margin: 2.1rem;
+}
+
+.logements_collapses {
+  display: flex;
+  width: 100%;
+  margin: 2.4rem 0;
+  gap: 7.6rem;
+}
+
+@media (max-width: 768px) {
+  .logements_info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logements_info__right {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .logements_collapses {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

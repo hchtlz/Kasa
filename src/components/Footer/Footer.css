@@ -29,8 +29,8 @@
 
 @media (max-width: 768px) {
   .footer__container {
-    padding-top: 6.6rem; /* Marge en haut pour le mobile */
-    padding-bottom: 5.8rem; /* Marge en bas pour le mobile */
+    padding-top: 6.6rem;
+    padding-bottom: 5.8rem;
   }
 
   .footer__container__logo__img {

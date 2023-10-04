@@ -1,0 +1,21 @@
+.cards_grid {
+  align-items: center;
+  background-color: #F6F6F6;
+  border-radius: 2.5rem;
+  display: grid;
+  grid-gap: 7rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  justify-items: center;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  max-width: 126rem;
+  padding: 5.6rem;
+}
+
+@media (max-width: 768px) {
+  .cards_grid {
+    background-color: transparent;
+    padding: 0;
+    gap: 2rem;
+  }
+}

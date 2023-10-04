@@ -1,5 +1,6 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import "./Logements.css";
+import React, { useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import logements from '../../datas/logement.json';
 import Carrousel from '../../components/Carrousel/Carrousel';
 import Tag from '../../components/Tag/Tag';
@@ -9,7 +10,19 @@ import Collapse from '../../components/Collapse/Collapse';
 
 export default function Logement() {
   const { id } = useParams();
+  const navigate = useNavigate();
+
   let logement = logements.find((logement) => logement.id === id);
+
+  useEffect(() => {
+    if (!logement) {
+      navigate("/404");
+    }
+  }, [logement]);
+  
+  if (!logement) {
+    return null;
+  }
   
   return (
     <div className="logements">

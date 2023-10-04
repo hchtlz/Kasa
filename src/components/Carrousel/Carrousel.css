@@ -58,3 +58,9 @@
   position: absolute;
   transform: translateX(-50%);
 }
+
+@media (max-width: 576px) {
+  .carrousel-info {
+    display: none;
+  }
+}

@@ -7,7 +7,7 @@ import Error from "./pages/Error/Error";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
-function App() {
+export default function App() {
 	return (
 		<div className="App">
 			<Header />
@@ -16,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/logement/:id" element={<Logement />} />
+          <Route path="/404" element={<Error />} />
           <Route path="*" element={<Error />} />
         </Routes>
 			</main>
@@ -23,5 +24,3 @@ function App() {
 		</div>
 	);
 }
-
-export default App;

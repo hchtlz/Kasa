@@ -1,3 +1,4 @@
+import "./Home.css";
 import React from "react";
 import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Card/Card";
@@ -5,9 +6,10 @@ import logements from "../../datas/logement.json";
 
 export default function Home() {
   const data = logements;
+  
   return (
     <div>
-      <Banner text="Chez vous, partout et ailleurs" />
+      <Banner text="Chez vous, partout et ailleurs" image={"/src/assets/images/banner.png"} />
       <div className="cards_grid">
         {data.map((logement) => (
           <Card
