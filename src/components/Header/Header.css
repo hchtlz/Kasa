@@ -32,10 +32,6 @@
   text-decoration: none;
 }
 
-.active {
-  text-decoration: underline!important;
-}
-
 @media (max-width: 576px) {
   .header {
     justify-content: left;

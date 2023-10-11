@@ -3,7 +3,14 @@ import './Header.css';
 import logo from '../../assets/images/logo-header.svg';
 import { Link, NavLink } from 'react-router-dom';
 
-export default function Header () {
+export default function Header ({ isActive }) {
+  
+  const navLinkClass = ({ isActive }) => {
+    return { 
+      textDecoration: isActive ? 'underline' : 'none'
+    }
+  }
+
   return (
     <header className="header">
       <Link to="/">
@@ -12,10 +19,10 @@ export default function Header () {
       <nav>
         <ul className="header__menu">
           <li className={`header__menu-item`}>
-            <NavLink to="/" activeclassname="active-link">Accueil</NavLink>
+            <NavLink to="/" style={navLinkClass}>Accueil</NavLink>
           </li>
           <li className={`header__menu-item`}>
-            <NavLink to="/about" activeclassname="active-link">A propos</NavLink>
+            <NavLink to="/about" style={navLinkClass}>A propos</NavLink>
           </li>
         </ul>
       </nav>
